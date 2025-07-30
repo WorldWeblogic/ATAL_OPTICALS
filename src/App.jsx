@@ -7,7 +7,7 @@ import Frames from './components/Frames';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import TestimonialsSlider from './components/Testimonials';
-import Review from './components/review';
+import Review from './components/Review';
 import ExploreCollection from './components/ExploreCollection';
 import Trending from './components/Trending';
 import Eyecheck from './components/Eyecheck';
