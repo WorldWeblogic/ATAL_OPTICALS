@@ -5,7 +5,7 @@ import PASTEL from '../assets/trending/PASTEL.jpg';
 import PRINCELY from '../assets/trending/PRINCELY.jpg';
 import REGAL from '../assets/trending/REGAL.jpg';
 import ROBYN from '../assets/trending/ROBYN.jpg';
-import SLICK from '../assets/trending/SLICK.jpg';
+import SLICK from '../assets/trending/slick.jpg';
 
 const trendingItems = [
     {
