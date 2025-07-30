@@ -8,7 +8,6 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import TestimonialsSlider from './components/Testimonials';
 import Review from './components/review';
-// import SliderGrid from './components/SliderGrid';
 import ExploreCollection from './components/ExploreCollection';
 import Trending from './components/Trending';
 import Eyecheck from './components/Eyecheck';
@@ -25,7 +24,6 @@ function App() {
     <Eyecheck/>
     <Promotion/>
     <Review/>
-    {/* <SliderGrid/> */}
     <Faq/>
     <TestimonialsSlider/>
     <Footer/>
