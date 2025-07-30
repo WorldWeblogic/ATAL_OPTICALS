@@ -1,8 +1,35 @@
-import React from 'react'
-
+import Promotion from './components/Promotion';
+import About from './components/About';
+import Faq from './components/Faq';
+import Services from './components/Services';
+import Footer from './components/Footer';
+import Frames from './components/Frames';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import TestimonialsSlider from './components/Testimonials';
+import Review from './components/review';
+// import SliderGrid from './components/SliderGrid';
+import ExploreCollection from './components/ExploreCollection';
+import Trending from './components/Trending';
+import Eyecheck from './components/Eyecheck';
 function App() {
   return (
-    <div className='bg-red-500 text-4xl'>App</div>
+   <>
+    <Header/>
+    <Banner/>
+    <About/>
+    <Frames/>
+    <Trending/>
+    <Services/>
+    <ExploreCollection/>
+    <Eyecheck/>
+    <Promotion/>
+    <Review/>
+    {/* <SliderGrid/> */}
+    <Faq/>
+    <TestimonialsSlider/>
+    <Footer/>
+   </>
   )
 }
 
