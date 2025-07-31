@@ -19,28 +19,28 @@ const Frameshape = () => {
               </p>
               <div className="flex justify-between mx-26 mt-6 flex-wrap gap-y-4">
                 <div>
-                  <img src={shape1} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img src={shape1} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
                 <div>
-                  <img  src={shape2} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img  src={shape2} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
                 <div>
-                  <img src={shape3} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img src={shape3} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
                 <div>
-                  <img src={shape4} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img src={shape4} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
                 <div>
-                  <img src={shape5} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img src={shape5} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
                 <div>
-                  <img src={shape6} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img src={shape6} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
                 <div>
-                  <img src={shape7} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img src={shape7} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
                 <div>
-                  <img src={shape8} className='hover:scale-120 hover:cursor-pointer'/>
+                  <img src={shape8} className='hover:scale-120 hover:cursor-pointer' loading='lazy' decoding='async'/>
                 </div>
               </div>
             </div>

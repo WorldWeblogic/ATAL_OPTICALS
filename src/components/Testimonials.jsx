@@ -76,6 +76,8 @@ const TestimonialsSlider = () => {
                                     src={item.image}
                                     alt={item.name}
                                     className="w-28 h-28 rounded-full object-cover mb-4 shadow"
+                                    loading='lazy'
+                                    decoding='async'
                                 />
                                 <div className="w-full flex justify-start text-left pl-4 mb-2">
                                     <h4 className="text-lg font-semibold text-gray-800 ml-24">{item.name}</h4>

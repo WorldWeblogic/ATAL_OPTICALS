@@ -3,13 +3,9 @@ import Slider from "react-slick";
 import slider1 from '../assets/banner/slider1.webp';
 import slider2 from '../assets/banner/slider2.webp';
 import slider3 from '../assets/banner/slider3.webp';
-import slider4 from '../assets/banner/image.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const data = [
-  // {
-  //   img:slider4
-  // },
   {
     img: slider2,
     text: "Innovative & Passionate Digital Agency",
@@ -44,6 +40,8 @@ function Banner() {
       <div key={index} className="relative">
         <img
           src={item.img}
+          loading="lazy"
+          decoding="async"
           className="w-full h-auto object-cover items-center justify-center"
           alt={`slider-${index}`}
         />

@@ -45,6 +45,8 @@ const ExploreCollection = () => {
                         <img
                             src={item.image}
                             alt={item.title}
+                            loading='lazy'
+                            decoding='async'
                             className="w-full h-78 object-cover transform group-hover:scale-105 transition duration-300"
                         />
                         <div className="absolute bottom-0 left-0 right-0 bg-red-600 bg-opacity-50 text-white py-3 text-lg font-semibold">

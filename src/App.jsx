@@ -16,7 +16,6 @@ import Eyewearsection from './components/Eyewearsection';
 import Frameshape from './components/Frameshape';
 import EyewearTips from './components/EyewearTips';
 import ProductGrid from './components/ProductGrid';
-import LensTypeSection from './components/Lenstypes';
 function App() {
   return (
    <>
@@ -31,7 +30,6 @@ function App() {
     <EyewearTips/>
     <ExploreCollection/>
     <Frameshape/>
-    {/* <LensTypeSection/> */}
     <Eyecheck/>
     <Promotion/>
     <Review/>

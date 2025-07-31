@@ -16,6 +16,8 @@ const ProductCard = ({ product }) => {
                     src={imageSrc}
                     alt="Product"
                     className="h-45 w-full object-contain rounded-xl"
+                    loading='lazy'
+                    decoding='async'
                 />
             </div>
 

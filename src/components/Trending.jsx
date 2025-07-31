@@ -82,6 +82,8 @@ const Trending = () => {
                                 src={item.image}
                                 alt={item.name}
                                 className="w-full h-36 object-contain mb-4 hover:scale-120"
+                                loading='lazy'
+                                decoding='async'
                             />
                             <p className="text-xl font-semibold tracking-wide text-red-600">{item.name}</p>
                         </div>
