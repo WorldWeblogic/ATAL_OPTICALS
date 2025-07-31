@@ -1,28 +1,54 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { FaStar } from 'react-icons/fa';
-
+import human1 from '../assets/test/human1.jpg';
+import human2 from '../assets/test/human2.jpg';
+import human3 from '../assets/test/human3.jpg';
+import human4 from '../assets/test/human4.jpg';
+import human5 from '../assets/test/human5.jpg';
+import human6 from '../assets/test/human6.jpg';
 const testimonials = [
+    {
+        name: 'Sneha Sharma',
+        title: 'Excellent Service!',
+        feedback: 'The sunglasses fit perfectly and the customer support was really helpful. Loved the packaging too!',
+        rating: 5,
+        image: human1,
+    },
+    {
+        name: 'Rekha Verma',
+        title: 'Stylish and Comfortable',
+        feedback: 'Loved the collection! My order arrived on time and the lenses are very comfortable.',
+        rating: 4,
+        image: human2,
+    },
+    {
+        name: 'Pallavi Mehta',
+        title: 'Value for Money',
+        feedback: 'Great quality for the price. Will definitely recommend to my friends!',
+        rating: 5,
+        image: human3,
+    },
     {
         name: 'Amit Sharma',
         title: 'Excellent Service!',
         feedback: 'The sunglasses fit perfectly and the customer support was really helpful. Loved the packaging too!',
         rating: 5,
-        image: 'https://randomuser.me/api/portraits/men/11.jpg',
+        image: human4,
     },
     {
-        name: 'Neha Verma',
+        name: 'Nidhi Verma',
         title: 'Stylish and Comfortable',
         feedback: 'Loved the collection! My order arrived on time and the lenses are very comfortable.',
         rating: 4,
-        image: 'https://randomuser.me/api/portraits/women/44.jpg',
+        image: human6,
     },
     {
         name: 'Rohan Mehta',
         title: 'Value for Money',
         feedback: 'Great quality for the price. Will definitely recommend to my friends!',
         rating: 5,
-        image: 'https://randomuser.me/api/portraits/men/32.jpg',
+        image: human5,
     },
 ];
 

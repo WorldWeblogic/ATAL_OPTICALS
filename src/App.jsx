@@ -11,6 +11,7 @@ import Review from './components/Review';
 import ExploreCollection from './components/ExploreCollection';
 import Trending from './components/Trending';
 import Eyecheck from './components/Eyecheck';
+import ModelViewer from './components/ModelViewer';
 function App() {
   return (
    <>
@@ -20,6 +21,7 @@ function App() {
     <Frames/>
     <Trending/>
     <Services/>
+    <ModelViewer/>
     <ExploreCollection/>
     <Eyecheck/>
     <Promotion/>
