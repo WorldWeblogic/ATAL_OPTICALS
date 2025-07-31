@@ -66,7 +66,7 @@ const Trending = () => {
         <section className="py-12 px-24 bg-white">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-black ml-2">Currently Trending</h2>
-                <button className="flex items-center gap-4 text-white font-medium bg-black px-4 py-2 rounded mr-1 hover:bg-red-600 transition-colors duration-300">
+                <button className="flex items-center gap-4 text-white font-medium bg-red-600 px-4 py-2 rounded mr-1 hover:bg-black transition-colors duration-300">
                     FIND MORE
                     <span className="bg-white text-black p-1 rounded-full">
                         <FiArrowRight size={16} />

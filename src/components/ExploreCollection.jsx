@@ -1,41 +1,41 @@
 import React from 'react';
-import img1 from '../assets/collection/img1.webp';
-import img2 from '../assets/collection/img2.webp';
-import img3 from '../assets/collection/img3.webp';
-import img4 from '../assets/collection/img4.webp';
-import img5 from '../assets/collection/img5.webp';
-
+import img1 from '../assets/newcollection/eyeglasses.jpg'
+import img2 from '../assets/newcollection/power.jpg'
+import img3 from '../assets/newcollection/sports.jpg'
+import img4 from '../assets/newcollection/sunglass.jpg'
+import img5 from '../assets/newcollection/blueglasses.jpg'
+import img6 from '../assets/newcollection/kids.png'
 const collections = [
     {
         title: 'Sunglasses',
-        image: img5
+        image: img4
     },
     {
         title: 'Eyeglasses',
-        image: img3
-    },
-    {
-        title: 'BLU Computer Glasses',
         image: img1
     },
     {
-        title: 'DIGI HOOPER',
-        image: img2
+        title: 'Blue Glasses',
+        image: img5
+    },
+    {
+        title: 'Kids Glasses',
+        image: img6
     },
     {
         title: 'Power Sunglasses',
-        image: img4
+        image: img2
     },
     {
         title: 'Sports Glasses',
-        image: img4
+        image: img3
     }
 ];
 
 const ExploreCollection = () => {
     return (
         <section className="py-16 px-26 bg-white text-center">
-            <h2 className="text-3xl font-bold mb-2">Explore Our Collections</h2>
+            <h2 className="text-3xl font-bold mb-2">Explore Our <span className="text-red-600">Collections</span></h2>
             <hr className='w-102 ml-92 mb-4'></hr>
             <p className="text-gray-600 mb-10">Hand-picked styles for every vision and personality.</p>
 
@@ -45,7 +45,7 @@ const ExploreCollection = () => {
                         <img
                             src={item.image}
                             alt={item.title}
-                            className="w-full h-60 object-cover transform group-hover:scale-105 transition duration-300"
+                            className="w-full h-78 object-cover transform group-hover:scale-105 transition duration-300"
                         />
                         <div className="absolute bottom-0 left-0 right-0 bg-red-600 bg-opacity-50 text-white py-3 text-lg font-semibold">
                             {item.title}

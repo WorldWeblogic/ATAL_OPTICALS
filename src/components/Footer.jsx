@@ -5,6 +5,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 const Footer = () => {
     return (
         <>
+     
             <div className="bg-red-600 h-[200px] text-center py-10 text-white">
                 <h3 className="text-xl font-semibold">
                     To Schedule an Appointment Reach Us at <br />
@@ -14,7 +15,6 @@ const Footer = () => {
                     Book an Appointment
                 </button>
             </div>
-
             <div className="bg-black text-white px-[5%] py-[1%] flex justify-between flex-wrap gap-y-8">
                 {/* Box 1 */}
                 <div className="max-w-[300px]">

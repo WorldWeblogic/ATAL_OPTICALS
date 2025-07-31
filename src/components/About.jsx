@@ -56,7 +56,7 @@ const About = () => {
             Come visit one of our locations today, and our friendly and
             knowledgeable team will help you find eye wear perfect for you.
           </p>
-          <button className="flex items-center bg-black text-white p-3 rounded-lg mt-6 hover:bg-red-600 hover:cursor-pointer">
+          <button className="flex items-center bg-red-600 text-white p-3 rounded-lg mt-6 hover:bg-black hover:cursor-pointer ">
             About Us{" "}
             <span className="ml-4 bg-white p-2 rounded-lg">
               <FaArrowRight className="text-black hover:rotate-[-45deg]" />

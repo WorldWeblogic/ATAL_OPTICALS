@@ -36,14 +36,14 @@ const Eyecheck = () => {
       </div>
 
       {/* Top Right: Stat 1 */}
-      <div className="bg-gradient-to-br from-gray-700 to-black text-white flex flex-col justify-center items-center rounded-xl shadow-xl p-6 mt-10 shadow-white">
-        <h2 className="text-6xl font-bold"><CountUp end={1} duration={3} />K+</h2>
+      <div className="bg-gradient-to-br from-red-600 via-black to-red-600  text-white flex flex-col justify-center items-center rounded-xl shadow-xl p-6 mt-10 shadow-white">
+        <h2 className="text-6xl font-bold hover:scale-120 hover:cursor-pointer"><CountUp end={1} duration={3} />K+</h2>
         <p className="mt-20 text-xl">Qualified Instructor</p>
       </div>
 
       {/* Bottom Left: Stat 2 */}
-      <div className="bg-gradient-to-br from-gray-700 to-black text-white flex flex-col justify-center items-center rounded-xl shadow-md p-6 mt-10">
-        <h2 className="text-6xl font-bold"><CountUp end={9} duration={3} />K+</h2>
+      <div className="bg-gradient-to-br from-red-600 via-black to-red-600  text-white flex flex-col justify-center items-center rounded-xl shadow-md p-6 mt-10">
+        <h2 className="text-6xl font-bold hover:scale-120 hover:cursor-pointer"><CountUp end={9} duration={3} />K+</h2>
         <p className="mt-20 text-xl">Active Student</p>
       </div>
 

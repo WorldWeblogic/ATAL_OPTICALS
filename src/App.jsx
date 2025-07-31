@@ -12,6 +12,11 @@ import ExploreCollection from './components/ExploreCollection';
 import Trending from './components/Trending';
 import Eyecheck from './components/Eyecheck';
 import ModelViewer from './components/ModelViewer';
+import Eyewearsection from './components/Eyewearsection';
+import Frameshape from './components/Frameshape';
+import EyewearTips from './components/EyewearTips';
+import ProductGrid from './components/ProductGrid';
+import LensTypeSection from './components/Lenstypes';
 function App() {
   return (
    <>
@@ -20,14 +25,19 @@ function App() {
     <About/>
     <Frames/>
     <Trending/>
+    <ProductGrid/>
     <Services/>
     <ModelViewer/>
+    <EyewearTips/>
     <ExploreCollection/>
+    <Frameshape/>
+    {/* <LensTypeSection/> */}
     <Eyecheck/>
     <Promotion/>
     <Review/>
     <Faq/>
     <TestimonialsSlider/>
+    <Eyewearsection/>
     <Footer/>
    </>
   )
