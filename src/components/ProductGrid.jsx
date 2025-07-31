@@ -46,7 +46,7 @@ const ProductCard = ({ product }) => {
 const ProductGrid = () => {
     const products = [
         {
-            name: 'Sunglasses',
+            name: 'Murcia Glasses',
             mainImage:
                 'https://s3.zeelool.com/admin/product/image/423277a4e4e9591f941b879526e127e2.jpg',
             altImages: [
@@ -65,7 +65,7 @@ const ProductGrid = () => {
             ],
         },
         {
-            name: 'Eyeglasses',
+            name: 'Osorio Glasses',
             mainImage:
                 'https://s3.zeelool.com/admin/product/image/97ce507f6478cdb2bd79c8e6f2679778.jpg',
             altImages: [
@@ -84,7 +84,7 @@ const ProductGrid = () => {
             ],
         },
         {
-            name: 'BLU Glasses',
+            name: 'Finklea Glasses',
             mainImage:
                 'https://s3.zeelool.com/admin/product/image/f45642b15ade36b18f0ae6b1130d389b.jpg',
             altImages: [
@@ -103,7 +103,7 @@ const ProductGrid = () => {
             ],
         },
         {
-            name: 'Sports Glasses',
+            name: 'Farris Glasses',
             mainImage:
                 'https://s3.zeelool.com/admin/product/image/f45642b15ade36b18f0ae6b1130d389b.jpg',
             altImages: [
