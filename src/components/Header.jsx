@@ -44,7 +44,7 @@ const placeholders = [
       <FaSquareInstagram className="hover:cursor-pointer hover:text-black"/>
       </div>
     </div>
-      <header className="bg-slate-200 text-white shadow-xl">
+      <header className="bg-white text-white shadow-xl">
         {/* Top Section */}
         <div className="flex items-center justify-between px-6 py-2">
           {/* Logo */}
