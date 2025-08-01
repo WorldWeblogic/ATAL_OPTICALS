@@ -24,7 +24,7 @@ const cardData = [
 
 const Frames = () => {
   return (
-    <div className="py-26 pl-12">
+    <div className="py-16 pl-12 mb-14">
     <h1 className="text-3xl font-bold text-center"><span>Shop by</span><span className="text-red-600"> Category</span> </h1>
     <hr className="w-72 ml-127 mb-10 mt-2"></hr>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

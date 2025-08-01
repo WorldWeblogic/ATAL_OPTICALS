@@ -7,6 +7,7 @@ import { useEffect,useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
+import logo from '../assets/category/logo.png'
 function Header() {
 
 const placeholders = [
@@ -43,16 +44,16 @@ const placeholders = [
       <FaSquareInstagram className="hover:cursor-pointer hover:text-black"/>
       </div>
     </div>
-      <header className="bg-black text-white shadow-xl">
+      <header className="bg-slate-200 text-white shadow-xl">
         {/* Top Section */}
-        <div className="flex items-center justify-between px-6 py-6">
+        <div className="flex items-center justify-between px-6 py-2">
           {/* Logo */}
-          <div className="text-xl font-bold text-white hover:text-red-600 hover:underline">
-            ATAL Optical Store
+          <div className="">
+            <img src={logo} loading="lazy" decoding="async" className="object-cover h-[80px] w-[240px]"/>
           </div>
 
           {/* Search Bar */}
-          <div className="flex-grow mx-8 max-w-2xl">
+          <div className="flex-grow max-w-2xl">
             <div className="relative">
               <input
                 type="text"
@@ -64,31 +65,31 @@ const placeholders = [
           </div>
 
           {/* Icons */}
-          <div className="flex items-center gap-6 text-xl">
-            <div className="flex items-center gap-1 text-white cursor-pointer hover:text-red-600">
+          <div className="flex items-center gap-6 text-2xl">
+            <div className="flex items-center gap-1 text-red-600 cursor-pointer hover:text-black">
               <FaUser />
               <span className="hover:underline">Sign In</span>
             </div>
-            <FaHeart className="text-white cursor-pointer hover:text-red-600" />
-            <FaCartShopping className="text-white cursor-pointer hover:text-yellow-400" />
+            <FaHeart className="text-red-600 cursor-pointer hover:text-black" />
+            <FaCartShopping className="text-red-600 cursor-pointer hover:text-black" />
           </div>
         </div>
 
         {/* Bottom Navigation Menu */}
         <nav className="">
-          <ul className="flex items-center justify-center gap-8 pb-5 pt-3 font-semibold text-white bg-black tracking-wide text-base">
-            <li className="cursor-pointer hover:text-red-600">HOME</li>
-            <li className="cursor-pointer hover:text-red-600">ABOUT US</li>
-            <li className="cursor-pointer hover:text-red-600">
+          <ul className="flex items-center justify-center gap-8 py-3 font-semibold text-white bg-black tracking-wide text-base">
+            <li className="cursor-pointer hover:text-red-600 ">ABOUT US</li>
+            <li className="cursor-pointer hover:text-red-600 ">HOME</li>
+            <li className="cursor-pointer hover:text-red-600 ">
               SERVICES
             </li>
             <li className="cursor-pointer hover:text-red-600">
               PROMOTION
             </li>
-            <li className="cursor-pointer hover:text-red-600">CATEGORY</li>
-            <li className="cursor-pointer hover:text-red-600">CONTACT US</li>
-            <li className="cursor-pointer hover:text-red-600">FAQ</li>
-            <li className="cursor-pointer hover:text-red-600">COLLECTIONS</li>
+            <li className="cursor-pointer hover:text-red-600 ">CATEGORY</li>
+            <li className="cursor-pointer hover:text-red-600 ">CONTACT US</li>
+            <li className="cursor-pointer hover:text-red-600 ">FAQ</li>
+            <li className="cursor-pointer hover:text-red-600 ">COLLECTIONS</li>
             <li className="cursor-pointer hover:text-black hover:bg-white bg-red-600 py-1 px-4 rounded-xl">BOOK EYE EXAM</li>
           </ul>
         </nav>
