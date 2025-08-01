@@ -16,7 +16,7 @@ import Eyewearsection from './components/Eyewearsection';
 import Frameshape from './components/Frameshape';
 import EyewearTips from './components/EyewearTips';
 import ProductGrid from './components/ProductGrid';
-import Video from './components/video';
+import Video from './components/Video';
 function App() {
   return (
    <>
