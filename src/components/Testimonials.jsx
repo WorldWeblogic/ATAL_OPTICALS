@@ -69,8 +69,8 @@ const TestimonialsSlider = () => {
             <hr className='mb-12 mt-2 w-106 ml-110 '></hr>
             <Slider {...settings}>
                 {testimonials.map((item, index) => (
-                    <div key={index} className="px-6">
-                        <div className="bg-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto border-1 border-red-600">
+                    <div key={index} className="px-6 hover:text-white">
+                        <div className="bg-white hover:bg-red-600 hover:text-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto border-1 border-red-600">
                             <div className="flex flex-col items-center">
                                 <img
                                     src={item.image}
@@ -80,10 +80,10 @@ const TestimonialsSlider = () => {
                                     decoding='async'
                                 />
                                 <div className="w-full flex justify-start text-left pl-4 mb-2">
-                                    <h4 className="text-lg font-semibold text-gray-800 ml-24">{item.name}</h4>
+                                    <h4 className="text-lg font-semibold ml-24">{item.name}</h4>
                                 </div>
                                 <h5 className="text-xl font-semibold mb-2">{item.title}</h5>
-                                <p className="text-gray-600 italic text-sm mb-4 max-w-xl">"{item.feedback}"</p>
+                                <p className="italic text-sm mb-4 max-w-xl">"{item.feedback}"</p>
                                 <div className="flex justify-center text-yellow-500 mb-2">
                                     {[...Array(item.rating)].map((_, i) => (
                                         <FaStar key={i} />

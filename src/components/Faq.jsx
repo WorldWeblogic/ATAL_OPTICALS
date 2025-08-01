@@ -132,11 +132,10 @@ function Faq() {
                 </button>
 
                 <div
-                  className={`transition-all duration-300 overflow-hidden ${
-                    openIndex === index
+                  className={`transition-all duration-300 overflow-hidden ${openIndex === index
                       ? "max-h-40 opacity-100 mt-2"
                       : "max-h-0 opacity-0"
-                  }`}
+                    }`}
                 >
                   <p className="text-gray-700">{faq.answer}</p>
                 </div>

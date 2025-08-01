@@ -8,47 +8,45 @@ import "slick-carousel/slick/slick-theme.css";
 const data = [
   {
     img: slider2,
-    text: "Innovative & Passionate Digital Agency",
-    desc: "Let us help you increase the reach and visibility of your business by driving highly targeted traffic.",
   },
   {
     img: slider1,
-    text: "Web Design & Development Services",
-    desc: "We design and develop beautiful and memorable websites with user-centric, mobile -first design approach for great user experience and enhaned conversions, ensuring high performance, security and scalability.",
   },
   {
     img: slider3,
-    text: "Web Design & Development Services",
-    desc: "We design and develop beautiful and memorable websites with user-centric, mobile -first design approach for great user experience and enhaned conversions, ensuring high performance, security and scalability.",
   },
 ];
 
 function Banner() {
   const settings = {
-    dots: false,
-    arrows: true,
+    dots: true,
+    arrows: false,
     infinite: true,
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 3000,
+    pauseOnHover: false
   };
 
   return (
-    <div className="h-full relative overflow-hidden">
-    <Slider {...settings}>
-    {data.map((item, index) => (
-      <div key={index} className="relative">
-        <img
-          src={item.img}
-          loading="lazy"
-          decoding="async"
-          className="w-full h-auto object-cover items-center justify-center"
-          alt={`slider-${index}`}
-        />
+    <div className="h-full">
+      <div className="relative">
+        <Slider {...settings}>
+          {data.map((item, index) => (
+            <div key={index} className="relative">
+              <img
+                src={item.img}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-auto object-cover items-center justify-center"
+                alt={`slider-${index}`}
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
-    ))}
-  </Slider>
-</div>
+    </div>
+
   );
 }
 

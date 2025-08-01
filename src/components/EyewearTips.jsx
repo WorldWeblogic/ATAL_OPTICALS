@@ -37,7 +37,7 @@ export default function EyewearTips() {
         {tips.map((tip, index) => (
           <div
             key={index}
-            className="bg-white text-black p-6 rounded-xl shadow-xl hover:shadow-lg transition-all hover:scale-105 hover:cursor-pointer hover:-translate-y-4 hover:bg-black hover:text-white border-2 border-red-600 hover:border-black"
+            className="bg-white text-black p-6 rounded-xl shadow-xl hover:shadow-lg transition-all hover:scale-105 hover:cursor-pointer hover:-translate-y-2 hover:bg-black hover:text-white border-2 border-red-600 hover:border-black"
           >
             <div className="flex justify-center mb-4 ">{tip.icon}</div>
             <h3 className="font-semibold text-lg mb-2">{tip.title}</h3>

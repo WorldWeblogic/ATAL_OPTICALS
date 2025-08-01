@@ -2,6 +2,7 @@ import React from "react";
 import eyecheck from "../assets/category/eyecheck.jpeg";
 import eyecheck2 from "../assets/category/eyecheck2.png";
 import CountUp from 'react-countup';
+import { FiArrowRight } from 'react-icons/fi';
 const Eyecheck = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between px-14 py-12 bg-white gap-x-30">
@@ -22,39 +23,46 @@ const Eyecheck = () => {
           how we can create a customized treatment plan tailored to your unique
           needs.
         </p>
-        <button className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-black hover:cursor-pointer transition">
-          Learn more
+        <button className="flex items-center gap-4 text-white font-medium bg-red-600 px-4 py-2 rounded mr-22 hover:bg-black transition-colors duration-300 hover:cursor-pointer">
+          Learn More
+          <span className="bg-white text-black p-1 rounded-full">
+            <FiArrowRight size={18} className="hover:rotate-[-45deg] transition duration-250 ease-in-out text-black" />
+          </span>
         </button>
       </div>
 
       {/* Right Image Section */}
-       <div className="grid grid-cols-2 gap-4 my-10 w-1/2 mr-12">
-      
-      {/* Top Left: Image 1 */}
-      <div className="rounded-xl overflow-hidden shadow-md h-[270px]">
-        <img src={eyecheck} alt="Student Reading" className="w-full h-full object-fill" loading="lazy" decoding="async" />
-      </div>
+      <div className="grid grid-cols-2 gap-4 my-10 w-1/2 mr-12">
 
-      {/* Top Right: Stat 1 */}
-      <div className="bg-gradient-to-br from-red-600 via-black to-red-600  text-white flex flex-col justify-center items-center rounded-xl shadow-xl p-6 mt-10 shadow-white">
-        <h2 className="text-6xl font-bold hover:scale-120 hover:cursor-pointer"><CountUp end={1} duration={3} />K+</h2>
-        <p className="mt-20 text-xl">Qualified Instructor</p>
-      </div>
+        {/* Top Left: Image 1 */}
+        <div className="rounded-xl overflow-hidden shadow-md h-[270px] hover:scale-105 transition-all duration-300 rounded-lg">
+          <img src={eyecheck} alt="Student Reading" className="w-full h-full object-fill" loading="lazy" decoding="async" />
+        </div>
 
-      {/* Bottom Left: Stat 2 */}
-      <div className="bg-gradient-to-br from-red-600 via-black to-red-600  text-white flex flex-col justify-center items-center rounded-xl shadow-md p-6 mt-10">
-        <h2 className="text-6xl font-bold hover:scale-120 hover:cursor-pointer"><CountUp end={9} duration={3} />K+</h2>
-        <p className="mt-20 text-xl">Active Student</p>
-      </div>
+        {/* Top Right: Stat 1 */}
+        <div className="hover:scale-105 transition-all duration-300 rounded-lg">
+          <div className="bg-gradient-to-br from-red-600 via-black to-red-600  text-white flex flex-col justify-center items-center rounded-xl shadow-xl p-8 mt-6 shadow-white">
+            <h2 className="text-6xl font-bold hover:scale-120 hover:cursor-pointer"><CountUp end={1} duration={3} />K+</h2>
+            <p className="mt-20 text-xl">Qualified Instructor</p>
+          </div>
+        </div>
 
-      {/* Bottom Right: Image 2 */}
-      <div className="rounded-xl overflow-hidden shadow-md h-[270px]">
-        <img src={eyecheck2} alt="Group Learning" className="w-full h-full object-cover" loading="lazy" decoding="async"/>
+        {/* Bottom Left: Stat 2 */}
+        <div className="hover:scale-105 transition-all duration-300 rounded-lg">
+          <div className="bg-gradient-to-br from-red-600 via-black to-red-600  text-white flex flex-col justify-center items-center rounded-xl shadow-md p-8 mt-6">
+            <h2 className="text-6xl font-bold hover:scale-120 hover:cursor-pointer"><CountUp end={9} duration={3} />K+</h2>
+            <p className="mt-20 text-xl">Active Student</p>
+          </div>
+        </div>
+
+        {/* Bottom Right: Image 2 */}
+        <div className="rounded-xl overflow-hidden shadow-md h-[270px] hover:scale-105 transition-all duration-300 rounded-lg">
+          <img src={eyecheck2} alt="Group Learning" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+        </div>
       </div>
-    </div>
     </section>
   );
 };
 
 export default Eyecheck
-  
+

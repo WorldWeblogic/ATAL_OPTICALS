@@ -39,7 +39,7 @@ const ExploreCollection = () => {
             <hr className='w-102 ml-92 mb-4'></hr>
             <p className="text-gray-600 mb-10">Hand-picked styles for every vision and personality.</p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 hover:cursor-pointer">
                 {collections.map((item, index) => (
                     <div key={index} className="group relative overflow-hidden rounded-xl shadow hover:shadow-lg transition-all">
                         <img

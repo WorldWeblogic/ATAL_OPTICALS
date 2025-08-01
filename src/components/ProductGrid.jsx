@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
         <div className="w-65 bg-white shadow-md rounded-xl overflow-hidden relative group duration-500 hover:scale-105 hover:shadow-xl">
 
             <button className="absolute top-2 right-2 z-10 bg-white/80 hover:text-red-600 rounded-full p-1 transition">
-                <FaHeart className="text-3xl text-red-600" />
+                <FaHeart className="text-3xl text-zinc-400 hover:text-red-600" />
             </button>
 
             <div className="mt-5 block w-65">
@@ -50,7 +50,7 @@ const ProductGrid = () => {
         {
             name: 'Murcia Glasses',
             mainImage:
-                'https://s3.zeelool.com/admin/product/image/423277a4e4e9591f941b879526e127e2.jpg',
+                'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-blue-full-rim-wayfarer-lenskart-blu-lb-e13740-c3_dsc5572_11_10_2024.jpg',
             altImages: [
                 {
                     color: '#6f42c1',
@@ -123,20 +123,20 @@ const ProductGrid = () => {
                 },
             ],
         },
-        
+
     ];
 
     return (
         <div className="bg-gray-100 py-16">
             <div className="flex justify-between items-center mb-6">
-                            <h2 className="text-2xl md:text-3xl font-bold text-black ml-22">Best Seller</h2>
-                            <button className="flex items-center gap-4 text-white font-medium bg-red-600 px-4 py-2 rounded mr-22 hover:bg-black transition-colors duration-300 hover:cursor-pointer">
-                                FIND MORE
-                                <span className="bg-white text-black p-1 rounded-full">
-                                    <FiArrowRight size={16} />
-                                </span>
-                            </button>
-                        </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-black ml-22">Best Seller</h2>
+                <button className="flex items-center gap-4 text-white font-medium bg-red-600 px-4 py-2 rounded mr-22 hover:bg-black transition-colors duration-300 hover:cursor-pointer">
+                    FIND MORE
+                    <span className="bg-white text-black p-1 rounded-full">
+                        <FiArrowRight size={16} className='hover:rotate-[-40deg]' />
+                    </span>
+                </button>
+            </div>
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-16 justify-items-center">
                 {products.map((product, idx) => (
                     <ProductCard key={idx} product={product} />
