@@ -78,8 +78,8 @@ const placeholders = [
         {/* Bottom Navigation Menu */}
         <nav className="">
           <ul className="flex items-center justify-center gap-8 py-3 font-semibold text-white bg-black tracking-wide text-base">
-            <li className="cursor-pointer hover:text-red-600 ">ABOUT US</li>
             <li className="cursor-pointer hover:text-red-600 ">HOME</li>
+            <li className="cursor-pointer hover:text-red-600 ">ABOUT US</li>
             <li className="cursor-pointer hover:text-red-600 ">
               SERVICES
             </li>
