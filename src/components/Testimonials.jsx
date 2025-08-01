@@ -69,7 +69,7 @@ const TestimonialsSlider = () => {
             <hr className='mb-12 mt-2 w-106 ml-110 '></hr>
             <Slider {...settings}>
                 {testimonials.map((item, index) => (
-                    <div key={index} className="px-6 hover:text-white">
+                    <div key={index} className="px-6">
                         <div className="bg-white hover:bg-red-600 hover:text-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto border-1 border-red-600">
                             <div className="flex flex-col items-center">
                                 <img
