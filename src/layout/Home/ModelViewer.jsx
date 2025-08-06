@@ -2,7 +2,7 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import modelPath from '../assets/category/modal3d.glb';
+import modelPath from '../../assets/category/modal3d.glb';
 import { FaGroupArrowsRotate } from "react-icons/fa6";
 function Model() {
     const { scene } = useGLTF(modelPath);

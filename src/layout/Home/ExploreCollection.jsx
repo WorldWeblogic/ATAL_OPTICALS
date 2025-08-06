@@ -1,10 +1,10 @@
 import React from 'react';
-import img1 from '../assets/newcollection/eyeglasses.jpg'
-import img2 from '../assets/newcollection/power.jpg'
-import img3 from '../assets/newcollection/sports.jpg'
-import img4 from '../assets/newcollection/sunglass.jpg'
-import img5 from '../assets/newcollection/blueglasses.jpg'
-import img6 from '../assets/newcollection/kids.png'
+import img1 from '../../assets/newcollection/eyeglasses.jpg'
+import img2 from '../../assets/newcollection/power.jpg'
+import img3 from '../../assets/newcollection/sports.jpg'
+import img4 from '../../assets/newcollection/sunglass.jpg'
+import img5 from '../../assets/newcollection/blueglasses.jpg'
+import img6 from '../../assets/newcollection/kids.png'
 const collections = [
     {
         title: 'Sunglasses',
@@ -36,7 +36,7 @@ const ExploreCollection = () => {
     return (
         <section className="py-16 px-26 bg-white text-center">
             <h2 className="text-3xl font-bold mb-2">Explore Our <span className="text-red-600">Collections</span></h2>
-            <hr className='w-102 ml-92 mb-4'></hr>
+            <hr className='w-102 ml-92 mb-4 border-black'></hr>
             <p className="text-gray-600 mb-10">Hand-picked styles for every vision and personality.</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 hover:cursor-pointer">

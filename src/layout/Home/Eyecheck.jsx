@@ -1,6 +1,6 @@
 import React from "react";
-import eyecheck from "../assets/category/eyecheck.jpeg";
-import eyecheck2 from "../assets/category/eyecheck2.png";
+import eyecheck from "../../assets/category/eyecheck.jpeg";
+import eyecheck2 from "../../assets/category/eyecheck2.png";
 import CountUp from 'react-countup';
 import { FiArrowRight } from 'react-icons/fi';
 const Eyecheck = () => {
@@ -11,7 +11,7 @@ const Eyecheck = () => {
         <h2 className="text-3xl font-semibold mb-4 text-gray-800">
           Eye Check Facility
         </h2>
-        <hr className="w-52 mb-8"></hr>
+        <hr className="w-52 mb-8 border-black"></hr>
         <p className="text-gray-600 mb-6 leading-relaxed">
           At the Dry Eye Institute, we offer a wide range of advanced treatments
           to address the root causes of dry eye and restore lasting comfort. Our
@@ -35,7 +35,7 @@ const Eyecheck = () => {
       <div className="grid grid-cols-2 gap-4 my-10 w-1/2 mr-12">
 
         {/* Top Left: Image 1 */}
-        <div className="rounded-xl overflow-hidden shadow-md h-[270px] hover:scale-105 transition-all duration-300 rounded-lg">
+        <div className="overflow-hidden shadow-md h-[270px] hover:scale-105 transition-all duration-300 rounded-lg">
           <img src={eyecheck} alt="Student Reading" className="w-full h-full object-fill" loading="lazy" decoding="async" />
         </div>
 
@@ -56,7 +56,7 @@ const Eyecheck = () => {
         </div>
 
         {/* Bottom Right: Image 2 */}
-        <div className="rounded-xl overflow-hidden shadow-md h-[270px] hover:scale-105 transition-all duration-300 rounded-lg">
+        <div className="overflow-hidden shadow-md h-[270px] hover:scale-105 transition-all duration-300 rounded-lg">
           <img src={eyecheck2} alt="Group Learning" className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>

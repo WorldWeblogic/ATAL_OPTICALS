@@ -1,46 +1,38 @@
-import Promotion from './components/Promotion';
-import About from './components/About';
-import Faq from './components/Faq';
-import Services from './components/Services';
-import Footer from './components/Footer';
-import Frames from './components/Frames';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import TestimonialsSlider from './components/Testimonials';
-import Review from './components/Review';
-import ExploreCollection from './components/ExploreCollection';
-import Trending from './components/Trending';
-import Eyecheck from './components/Eyecheck';
-import ModelViewer from './components/ModelViewer';
-import Eyewearsection from './components/Eyewearsection';
-import Frameshape from './components/Frameshape';
-import EyewearTips from './components/EyewearTips';
-import ProductGrid from './components/ProductGrid';
-import Video from './components/Video';
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './page/Home/Home';
+import Dashboard from './page/dashboard/Dashboard';
+import Page from './page/Page';
+import Layout from './layout/Layout';
+import Cartpage from './page/Cart/Cartpage';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout/>,
+    children:[
+      {
+        path:"/",
+        element:<Home/>
+      },
+      {
+        path:"/cart",
+        element:<Cartpage/>
+      },
+      {
+        path:"/dashboard",
+        element:<Dashboard/>
+      },
+      {
+        path:"*",
+        element:<Page/>
+      }
+    ]
+  }
+]);
+
 function App() {
-  return (
-   <>
-    <Header/>
-    <Banner/>
-    <About/>
-    <Frames/>
-    <Video/>
-    <Trending/>
-    <ProductGrid/>
-    <Services/>
-    <ModelViewer/>
-    <EyewearTips/>
-    <ExploreCollection/>
-    <Frameshape/>
-    <Eyecheck/>
-    <Promotion/>
-    <Review/>
-    <Faq/>
-    <TestimonialsSlider/>
-    <Eyewearsection/>
-    <Footer/>
-   </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

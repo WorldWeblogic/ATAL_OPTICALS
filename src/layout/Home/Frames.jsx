@@ -1,9 +1,7 @@
-
 import "./FlipCard.css"; 
-import contactImage from '../assets/frame/contactlens.jpg'
-import menFrameImage from '../assets/frame/menframe.jpg'
-//import woman from '../assets/category/woman.jpg'
-import woman from '../assets/frame/woman.jpg'
+import contactImage from '../../assets/frame/contactlens.jpg'
+import menFrameImage from '../../assets/frame/menframe.jpg'
+import woman from '../../assets/frame/woman.jpg'
 const cardData = [
   {
     front: contactImage,
@@ -26,7 +24,7 @@ const Frames = () => {
   return (
     <div className="py-16 pl-12 mb-14">
     <h1 className="text-3xl font-bold text-center"><span>Shop by</span><span className="text-red-600"> Category</span> </h1>
-    <hr className="w-72 ml-127 mb-10 mt-2"></hr>
+    <hr className="w-72 ml-127 mb-10 mt-2 border-black"></hr>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {cardData.map((card, index) => (
           <div key={index} className="flip-card">
