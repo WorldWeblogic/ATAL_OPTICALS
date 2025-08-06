@@ -1,6 +1,6 @@
 import React from "react";
-import bgimage from "../assets/promotion/bgimage.png";
-import woman from "../assets/promotion/woman.jpg";
+import bgimage from "../../assets/promotion/bgimage.png";
+import woman from "../../assets/promotion/woman.jpg";
 import { TbMathGreater } from "react-icons/tb";
 function Promotion() {
   return (
@@ -26,7 +26,7 @@ function Promotion() {
           </div>
           <div className="bg-white mt-14 mr-26 w-160">
             <h1 className="text-3xl font-bold mt-10 ml-10"> OUR <span className="text-red-600">PROMOTIONS</span> </h1>
-            <hr className="mt-2 w-68 ml-10"></hr>
+            <hr className="mt-2 w-68 ml-10 border-black"></hr>
             <p className="text-lg text-zinc-600 m-10 text-justify">
               We offers Multiple Pair Savings of 40% on our eyewear. Some
               exclusions apply. With the purchase of a Year Supply of Contacts,

@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../assets/about/about-us.jpg";
-import bgimage from "../assets/about/bgimage.png";
+import image from "../../assets/about/about-us.jpg";
+import bgimage from "../../assets/about/bgimage.png";
 import { FaArrowRight } from "react-icons/fa";
 const About = () => {
   return (
@@ -33,7 +33,7 @@ const About = () => {
           <h2 className="text-red-600 text-2xl font-semibold mb-2">
             Welcome To ATAL Optical
           </h2>
-          <hr className="w-42 mb-6 text-red-600"></hr>
+          <hr className="w-42 mb-6 border-red-500"></hr>
           <h1 className="text-3xl md:text-4xl font-light leading-snug mb-4">
             ATAL Optical has been providing{" "}
             <strong className="font-semibold">

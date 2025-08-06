@@ -1,12 +1,12 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { FaStar } from 'react-icons/fa';
-import human1 from '../assets/test/human1.jpg';
-import human2 from '../assets/test/human2.jpg';
-import human3 from '../assets/test/human3.jpg';
-import human4 from '../assets/test/human4.jpg';
-import human5 from '../assets/test/human5.jpg';
-import human6 from '../assets/test/human6.jpg';
+import human1 from '../../assets/test/human1.jpg';
+import human2 from '../../assets/test/human2.jpg';
+import human3 from '../../assets/test/human3.jpg';
+import human4 from '../../assets/test/human4.jpg';
+import human5 from '../../assets/test/human5.jpg';
+import human6 from '../../assets/test/human6.jpg';
 const testimonials = [
     {
         name: 'Sneha Sharma',
@@ -66,7 +66,7 @@ const TestimonialsSlider = () => {
     return (
         <section className="py-16 px-6 bg-gray-100 text-center">
             <h3 className="text-3xl font-bold">What Our <span className="text-red-600">Customers Say</span></h3>
-            <hr className='mb-12 mt-2 w-106 ml-110 '></hr>
+            <hr className='mb-12 mt-2 w-106 ml-110 border-black'></hr>
             <Slider {...settings}>
                 {testimonials.map((item, index) => (
                     <div key={index} className="px-6">

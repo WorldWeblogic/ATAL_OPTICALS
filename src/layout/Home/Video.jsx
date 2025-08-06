@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../assets/video/eye-video.mp4';
+import video from '../../assets/video/eye-video.mp4';
 function Video() {
   return (
     <div className="mx-20">

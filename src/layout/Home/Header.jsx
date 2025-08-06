@@ -7,7 +7,7 @@ import { useEffect,useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
-import logo from '../assets/category/logo.png'
+import logo from '../../assets/category/logo.png'
 function Header() {
 
 const placeholders = [

@@ -5,29 +5,28 @@ function Faq() {
 
   const faqs = [
     {
-      question: "Reasons to consider lenses",
-      answer:
-        "If you are just considering getting contacts for the first time, you have already been wearing glasses for a while. You are probably already aware of some of the advantages that contact lenses have over glasses. However, you should read on to see other areas where lenses are superior.",
+      question: "Do you offer prescription sunglasses?",
+      answer:"Yes, we carry a wide range of prescription sunglasses with UV protection, including polarized, transition, and custom-tinted lenses.",
     },
     {
-      question: "Better vision overall",
-      answer:
-        'Because contact lenses are positioned on your eye, rather than sitting away from the eyes like glasses, you will enjoy much better peripheral vision, and thereby a wider view in general. You will be able to see far better when you move your eyes to either side, as you are always still looking through the center of the lens. This is called the "optic zone," and contacts have the obvious advantage, as when you wear glasses you can only enjoy this zone when looking straight ahead.In addition to peripheral advantages, contact lenses also allow you to see things in a way that is more like having perfect vision. Glasses can distort your vision, giving you a false perception of the size and position of everything you are looking at. For example, corrective glasses for nearsighted people make things appear smaller, while glasses for the farsighted cause the wearer to see everything as larger than it actually is.',
+      question: "Why is UV protection important for eye health?",
+      answer:'Prolonged UV exposure can lead to cataracts, macular degeneration, and corneal damage. Our sunglasses offer 100% UV-A and UV-B protection.',
     },
     {
-      question: "Less annoying effects from weather and movement",
-      answer:
-        "One of the most annoying things about glasses is how they are affected by the weather and by your own body heat. Every glasses wearer knows how annoying it can be to deal with rain. Almost as bad is when you walk outside on a humid day, or walk inside from a cold outdoors, and your glasses fog up. Likewise, when you try to exercise or do some other activity that works up a sweat, your glasses can not only become steamy so that you cant see clearly, but they can also start to slide down your nose.Besides sliding around due to sweat, glasses may bounce around on your face or even fall off when you are running and doing other physical activity. Imagine the freedom your contact lenses will give you from all of these unpleasant circumstances.",
+      question: " How can I choose the right frame for my face?",
+      answer:"Our experienced team will guide you based on face shape, lifestyle, and personal style preferences. Virtual try-on options are also available.",
     },
     {
-      question: "More convenient and comfortable",
-      answer:
-        "Glasses can be uncomfortable in general, not only in the above mentioned conditions. They may feel heavy on your nose after a while, or they can rub you the wrong way behind your ears. And its nearly impossible to wear the latest style in sunglasses when you have to wear your regular specs all the time. Even if you go for some prescription sunglasses, there are differences between those and regular sunglasses. There are fewer styles to choose from, and the lenses must be flatter to avoid distortion.",
+      question: " What brands do you carry",
+      answer:" We offer a curated selection of designer, luxury, and value brands, including Ray-Ban, Oakley, Gucci, Versace, and more.",
     },
     {
-      question: "Are contact lenses right for you?",
-      answer:
-        "Despite all the wonderful characteristics of the contact lens, some people simply do not care for them. If you do want to wear contacts, however, chances are that you can. No matter if you are nearsighted, farsighted, or have astigmatism or presbyopia, there are lenses available to suit your needs. Contacts are obviously more convenient for when you are doing physical activities, and the best part is that when you do not feel like using them, you can always take them out and wear your glasses instead.",
+      question: " Do you provide glasses for specific professions or safety requirements?",
+      answer:"Yes, we offer occupational safety glasses and custom eyewear for professionals, including healthcare workers, tradespeople, and office workers.",
+    },
+    {
+      question: "Can I get fitted for contact lenses at Atal Optical?",
+      answer:" Yes. Our optometrists provide professional contact lens fittings, training for first-time wearers, and follow-up care.",
     },
   ];
 
@@ -119,13 +118,15 @@ function Faq() {
             <p className="text-4xl">
               Frequently Asked <span className="font-bold">Questions</span>
             </p>
-            <hr className="w-102 mb-6 mt-2"></hr>
+            <hr className="w-102 mb-10 mt-2 border-black"></hr>
             {faqs.map((faq, index) => (
-              <div key={index} className="mb-4 border-b pb-4">
+              <div key={index} className="mb-4 border-b border-black pb-4">
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full text-left flex justify-between items-center focus:outline-none hover:cursor-pointer">
+                  <div className="flex flex-col">
                   <span className="text-lg font-medium">{faq.question}</span>
+                  </div>
                   <span className="text-xl">
                     {openIndex === index ? "−" : "+"}
                   </span>
